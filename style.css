@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+#header {
+    background: url('./images/photograper.jpg');
+    aspect-ratio: auto 1500 / 600;
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#header .nav {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+#header .nav a {
+    padding: 8px 16px;
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+}
+
+#header .nav a:hover {
+    background-color: #ccc;
+}
+
+#header .text-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 24px;
+    color: #fff;
+    border: 1px solid #fff;
+
+}
+
+#header .text-name {
+    font-weight: 400;
+    font-size: 48px;
+    margin: 10px 0;
+    line-height: 72px;
+    letter-spacing: 4px;
+}
+
+#header .text-position {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 4px;
+}
+
+#content {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 12px 24px;
+}
+
+#content .image-content {
+    aspect-ratio: 1000/500;
+    max-width: 1000px;
+    margin-bottom: 16px;
+    width: 100%;
+    display: block;
+}
+
+
+
+
+#footer {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 12px 24px;
+}
+
+#footer hr {
+    margin: 20px 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#footer .footer-contact {
+    padding: 32px 24px;
+    background-color: rgb(241, 241, 241);
+}
+
+#footer .contact-title {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: 400;
+
+}
+
+#footer .contact-description {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+#footer .form-contact input {
+    display: block;
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    line-height: 22.5px;
+}
+
+#footer .send-form {
+    width: 100%;
+    background-color: rgb(97, 97, 97);
+    color: #fff;
+    padding: 8px 16px;
+    line-height: 22.5px;
+    border: none;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#footer .send-form:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#footer .form-contact .input-form {
+    margin: 16px 0;
+}
+
+#footer .copyright {
+    margin: 15px 0;
+}
+
+@media (max-width: 768px) {
+    #header .text-name {
+        font-weight: 400;
+        font-size: 15px;
+        margin: 10px 0;
+        line-height: 72px;
+        letter-spacing: 4px;
+        line-height: normal;
+    }
+
+    #header .text-position {
+        display: none;
+    }
+
+}
